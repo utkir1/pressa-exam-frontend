@@ -1,0 +1,51 @@
+@import "../../Scss/Variables.scss";
+
+.last-posts {
+  margin-bottom: 235px;
+}
+
+.last-posts__heading {
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: $darkBlack;
+}
+
+.last-posts__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px 30px;
+  margin: 0;
+  margin-bottom: 70px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.last-posts__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 180px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 20px;
+  font-size: 18px;
+  line-height: 24px;
+  color: $white;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: $lightBlue;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $darkBlue;
+  }
+
+  &__loading {
+    width: 20px;
+    color: $white;
+  }
+}
